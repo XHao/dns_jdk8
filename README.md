@@ -1,3 +1,2 @@
-# dns in openjdk8
-
-DNS lookup in openjdk8 workaround
+1. dns in openjdk8
+2. delay ack and nagel
