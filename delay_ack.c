@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
     printf("input remote host");
     exit(0);
   }
-
+  /** 如果不设置，会出现40ms延时 */
   setsockopt(fd, IPPROTO_TCP, TCP_NODELAY, (int[]){1}, sizeof(int));
   if (connect(fd, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
     printf("connect error: %s(errno: %d)\n", strerror(errno), errno);
